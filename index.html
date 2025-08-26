@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kai-Cheng Chiang (JKC) — 一頁式作品集</title>
+  <meta name="description" content="JKC 的作品集：少樣本語意分割、主動式學習、Raspberry Pi 影像串流、資料庫系統、平行化 Canny 等；依職缺能力標籤（前後端、GCP、Python）排序展示。">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root { --bg:#0b0c0f; --card:#11131a; --text:#e6e9ef; --muted:#a3aab8; --brand:#4f8cff; --chip:#222635; --chip-border:#2c3142; --accent:#95b8ff; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--text);background:radial-gradient(1200px 600px at 80% -10%,#1b2240 0%,#0b0c0f 60%)}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1120px;margin:0 auto;padding:24px}
+    header{padding:48px 0 24px}
+    .hero{display:grid;gap:16px;grid-template-columns:1.2fr 1fr;align-items:center}
+    .hero h1{margin:0;font-size:40px;line-height:1.15;letter-spacing:.3px}
+    .hero p{margin:4px 0 0;color:var(--muted);font-size:16px}
+    .cta{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid #2a3350;background:linear-gradient(180deg,#2a3350,#1b2238);color:#fff;font-weight:600}
+    .btn.ghost{background:transparent}
+    .panel{margin-top:24px;padding:14px;border-radius:14px;background:linear-gradient(180deg,#121624,#0f1320);border:1px solid #202741}
+    .filters{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;background:#222635;border:1px solid #2c3142;color:#d5dcf0;font-size:13px;cursor:pointer}
+    .chip input{display:none} .chip.active{outline:2px solid var(--brand)}
+    .section{padding:16px 0 8px} .section h2{margin:28px 0 10px;font-size:22px;letter-spacing:.2px}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+    .card{grid-column:span 12;padding:14px;border-radius:16px;background:linear-gradient(180deg,#101522,#0e121c);border:1px solid #1b2136;display:grid;gap:12px;grid-template-columns:160px 1fr}
+    .thumb{width:100%;height:120px;border-radius:12px;object-fit:cover;border:1px solid #232a43;background:#0b0f19}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+    .tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px}
+    .tag{padding:4px 8px;border-radius:999px;background:#1a1f30;border:1px solid #2a3048;font-size:12px;color:#cdd5eb}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .divider{height:1px;background:#1c2338;border:none;margin:24px 0}
+    .kicker{color:#9fb2ff;font-weight:600;letter-spacing:.3px;text-transform:uppercase;font-size:12px}
+    .edu-badge{color:#9de1b9;font-weight:600}
+    .fit-note{color:#f4d06f;font-size:12px;margin-left:6px}
+    footer{padding:32px 0 48px;color:var(--muted);font-size:14px}
+    @media (max-width:920px){.hero{grid-template-columns:1fr}.card{grid-template-columns:1fr}.thumb{height:180px}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://github.com/JohnsonChang123","@type":"Person","name":"Kai-Cheng Chiang (JKC)","jobTitle":"Software Engineer",
+   "url":"https://https://github.com/JohnsonChang123","alumniOf":[{"@type":"CollegeOrUniversity","name":"國立臺灣海洋大學"},{"@type":"CollegeOrUniversity","name":"逢甲大學"}],
+   "knowsAbout":["Python","GCP","Raspberry Pi","Active Learning","Few-shot Segmentation"]}
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div>
+        <div class="kicker">作品集 / Portfolio</div>
+        <h1>Kai-Cheng Chiang（JKC）</h1>
+        <p>軟體工程師｜Python｜GCP/雲端｜semantic segmentation｜Active learning。<br>
+           專長為少樣本影像分割與深度學習，碩士論文透過 Active Learning 改善樣本選取流程，讓模型效能與泛化能力明顯提升。另熟悉語意分割模型開發與 GCP 雲端部署，具備將研究成果整合到實際系統的經驗。能兼顧研究與實務，致力於把 AI 技術真正應用到產業場景中。</p>
+        <div class="cta">
+          <a class="btn" href="https://mail.google.com/mail/?view=cm&to=vip.johnson880017@gmail.com" target="_blank" rel="noopener">
+  Email
+</a>
+
+          <a class="btn ghost" href="https://pda.104.com.tw/profile/share/djBxeC1atpb9f7xfoMvBj6JP8OLRC6MP" target="_blank" rel="noopener">下載履歷 PDF</a>
+          <a class="btn ghost" href="https://github.com/JohnsonChang123" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="panel" role="region" aria-label="標籤篩選">
+        <div style="margin-bottom:8px;color:#cdd5eb;font-weight:600;">依標籤快速篩選</div>
+        <div class="filters" id="filters">
+          <label class="chip"><input type="checkbox" value="backend">後端/系統</label>
+          <label class="chip"><input type="checkbox" value="aws">GCP/雲端</label>
+          <label class="chip"><input type="checkbox" value="python">Python</label>
+          <label class="chip"><input type="checkbox" value="edge">IoT</label>
+          <label class="chip"><input type="checkbox" value="vision">CV/Segmentation</label>
+          <label class="chip"><input type="checkbox" value="db">Database</label>
+          <button class="chip" id="resetBtn">清除</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 碩士作品 -->
+    <section class="section" aria-labelledby="ms">
+      <h2 id="ms">碩士作品 <span class="edu-badge">NTOU 資工</span></h2>
+      <div class="grid" id="msGrid">
+
+        <!-- 碩論：提示式主動學習 + FSS（CVGIP） -->
+        <article class="card" data-tags="python  product " data-edu="ms">
+          <img class="thumb" src="https://github.com/JohnsonChang123/JKC_Portfolio/blob/main/CVGIPlogo.jpg?raw=true" alt="Prompt-based Active Learning for FSS" />
+          <div>
+            <h3>Prompt-Enabled Batch-Mode Active Learning for Few-Shot Segmentation <span class="fit-note">（Python、碩士論文、CVGIP會議論文）</span></h3>
+            <div class="meta">PyTorch、Few-Shot Segmentation、Active Learning、KL 散度</div>
+            <div class="tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">FSS</span><span class="tag">CVGIP</span></div>
+            <p>建構提示式主動學習框架，透過自動編碼器與 KL散度 選樣機制，在少樣本分割下提升 mIoU 與覆蓋率。</p>
+<div class="row">
+  <a class="btn ghost" href="https://hdl.handle.net/11296/4562gx" target="_blank" rel="noopener">
+    論文
+  </a>
+
+</div>
+
+          </div>
+        </article>
+
+        <!-- 專利：魚水花辨識系統 -->
+        <article class="card" data-tags="edge vision python product backend" data-edu="ms">
+          <img class="thumb" src="https://github.com/JohnsonChang123/JKC_Portfolio/blob/main/%E5%B0%88%E5%88%A9%E8%AD%89%E6%9B%B8.png?raw=true" alt="魚水花辨識系統 專利" />
+          <div>
+            <h3>「智慧投餌強度辨識系統及方法」：I892930<span class="fit-note">（後端/系統、專利）</span></h3>
+            <div class="meta">Raspberry Pi、RTSP/監控影像串流、GCP、雲端控制</div>
+            <div class="tags"><span class="tag">Edge/IoT</span><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">專利</span></div>
+            <p>於雲端分析魚群的食慾趨勢，偵測餵食異常，並串接雲端監控與警告，減少使用者巡邏漁場場域所需要的時間成本與人力成本。</p>
+            <div class="row">
+  <a class="btn ghost" href="https://tiponet.tipo.gov.tw/twpat1/twpatc/twpatengkm?!!FRURLI892930
+" target="_blank" rel="noopener">
+    專利公開連結
+  </a>
+              <a class="btn ghost" href="https://tie.twtm.com.tw/zh-tw/exhibition-detail/4777
+" target="_blank" rel="noopener">
+    系統資訊
+  </a>
+            </div>
+          </div>
+        </article>
+<!-- 4. ESP32/電流感測器 × Flask 魚隻餵食紀錄表 -->
+<article class="card" data-tags="edge backend python  " data-edu="ms">
+  <img class="thumb" src="https://github.com/JohnsonChang123/JKC_Portfolio/blob/main/%E9%9B%BB%E6%B5%81%E6%84%9F%E6%B8%AC%E5%99%A8,%E9%A4%B5%E9%A3%9F%E6%97%A5%E8%AA%8C.png?raw=true"
+       alt="ESP32 電流感測器 × Flask 魚隻餵食紀錄表" />
+  <div>
+    <h3>ESP32/電流感測器 × Flask 魚隻餵食紀錄表
+      <span class="fit-note">（微處理機、Backend）</span>
+    </h3>
+    <div class="meta">
+      ESP32 電流感測 → 投餌機 ON/OFF 偵測 → 後端（Flask）；
+    </div>
+    <div class="tags">
+      <span class="tag">Edge/IoT</span><span class="tag">ESP32</span>
+      <span class="tag">Python/Flask</span><span class="tag">SQLite/DB</span>
+      
+    </div>
+    <p>
+      以 ESP32 量測傳統投餌機電流變化並上傳至後端，於GCP架Flask 產生日曆表與時長圖，
+      快速回顧各日餵食紀錄與異常。
+    </p>
+  </div>
+</article>
+
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true">
+
+    <!-- 大學作品 -->
+    <section class="section" aria-labelledby="bs">
+      <h2 id="bs">大學作品 <span class="edu-badge">FCU 應數/輔修資工</span></h2>
+      <div class="grid" id="bsGrid">
+<!-- 合併版：大學專題（SDAN + 海報/獎項） -->
+<article class="card" data-tags="vision python backend  frontend " data-edu="bs">
+  <img class="thumb" src="https://github.com/JohnsonChang123/JKC_Portfolio/blob/main/%E5%A4%A7%E5%AD%B8%E5%B0%88%E9%A1%8C.png?raw=true" alt="大學專題—基於雙重注意力網路的影像除雨技術（SDAN）與獎項海報" />
+  <div>
+    <h3>大學專題：基於雙重注意力網路的影像除雨技術（SDAN） & 海報獎項
+      <span class="fit-note">（CV、展示）</span>
+    </h3>
+    <div class="meta">
+      Sequential Dual Attention Network、資料前處理、OpenCV 增補、實驗度量；
+      專題海報獲得展覽評審獎項與肯定
+    </div>
+    <div class="tags">
+      <span class="tag">Computer Vision</span>
+      <span class="tag">Attention</span>
+      <span class="tag">OpenCV</span>
+      <span class="tag">實驗設計</span>
+      <span class="tag">展示設計</span>
+      <span class="tag">技術溝通</span>
+    </div>
+    <p>
+      本專題以 Sequential Dual Attention Network（SDAN）實作影像除雨任務，探討資料清理、
+      增補策略、權重監控與指標趨勢，並整理為完整展示海報與口頭報告。
+      專題成果在校內專題展獲得獎項，展現技術研究與成果呈現的雙重能力。
+    </p>
+    <div class="row">
+      <a class="btn ghost" href="https://youtu.be/eA_KEW0l0rA?si=0WpMNFCrzykrx049" target="_blank" rel="noopener">專題報告</a>
+
+      <a class="btn ghost" href="https://github.com/JohnsonChang123/JKC_Portfolio/blob/main/%E7%B0%A1%E5%A0%B1%E7%8D%8E.png?raw=true" target="_blank" rel="noopener">獎狀</a>
+    </div>
+  </div>
+</article>
+
+
+
+        <!-- 資料庫：入庫系統 -->
+        <article class="card" data-tags="backend db javascript product " data-edu="bs">
+          <img class="thumb" src="https://github.com/JohnsonChang123/JKC_Portfolio/blob/main/%E8%B3%87%E6%96%99%E5%BA%AB%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88.png?raw=true" alt="資料庫程式設計：入庫系統" />
+          <div>
+            <h3>資料庫程式設計：入庫系統 <span class="fit-note">（後端/DB）</span></h3>
+            <div class="meta">PHP + MySQL、權限</div>
+            <div class="tags"><span class="tag">Database</span><span class="tag">後端</span></div>
+            <p>設計 ERD 與正規化，實作入出庫流程、權限分級與稽核記錄；。</p>
+            
+          </div>
+        </article>
+
+        <!-- 平行化 Canny Edge 路面分割 -->
+        <article class="card" data-tags="python vision backend " data-edu="bs">
+          <img class="thumb" src="https://github.com/JohnsonChang123/JKC_Portfolio/blob/main/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%B5%90%E6%A7%8B.png?raw=true" alt="平行化 Canny Edge 路面分割" />
+          <div>
+            <h3>計算機結構：平行化 Canny Edge 路面分割 <span class="fit-note">（CV、效能）</span></h3>
+            <div class="meta">OpenCV、多執行緒/向量化、效能量測</div>
+            <div class="tags"><span class="tag">OpenCV</span><span class="tag">平行化</span><span class="tag">效能測試</span></div>
+            <p>將Canny Edge & Hough transfer做平行化加速，建立前後對比與量測報告。</p>
+          </div>
+        </article>
+
+        <!-- Android 小遊戲（雲端排行榜） -->
+        <article class="card" data-tags="db" data-edu="bs">
+          <img class="thumb" src="https://github.com/JohnsonChang123/JKC_Portfolio/blob/main/pop_catAPP.gif?raw=true" alt="Android 小遊戲" />
+          <div>
+            <h3>大二課堂作業：Android 遊戲：Catchater（含雲端排行榜） <span class="fit-note">（APP/DB）</span></h3>
+            <div class="meta">Android、雲端資料庫（排行榜）</div>
+            <div class="tags"><span class="tag">Android</span><span class="tag">FireDB</span></div>
+            <p>實作簡易小遊戲與FireDB雲端排行榜上傳/查詢流程， Apps創意程式設計期末成果展嘉獎。</p>
+        　  <a class="btn ghost" href="https://github.com/JohnsonChang123/JKC_Portfolio/blob/main/APP%E7%8D%8E.png?raw=true" target="_blank" rel="noopener">獎狀</a>
+
+            </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Kai-Cheng Chiang（JKC）．GitHub Pages 作品集。</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const chips=[...document.querySelectorAll('.chip input')];
+    const chipLabels=[...document.querySelectorAll('.chip')];
+    const cards=[...document.querySelectorAll('.card')];
+    const resetBtn=document.getElementById('resetBtn');
+    function applyFilter(){
+      const active=chips.filter(c=>c.checked).map(c=>c.value);
+      chipLabels.forEach(lbl=>lbl.classList.toggle('active',!!lbl.querySelector('input')?.checked));
+      if(active.length===0){cards.forEach(c=>c.style.display='grid');return;}
+      cards.forEach(card=>{
+        const tags=(card.dataset.tags||'').split(' ');
+        const ok=active.every(a=>tags.includes(a));
+        card.style.display=ok?'grid':'none';
+      });
+    }
+    chips.forEach(c=>c.addEventListener('change',applyFilter));
+    resetBtn.addEventListener('click',()=>{chips.forEach(c=>c.checked=false);applyFilter();});
+    // 依職缺匹配度排序（後端/雲端/Python/測試）
+    const priority=["backend","aws","python","product"];
+    function score(card){const tags=(card.dataset.tags||'').split(' ');return priority.reduce((s,t)=>s+(tags.includes(t)?1:0),0);}
+    function sortGrid(gridId){const grid=document.getElementById(gridId);[...grid.children].sort((a,b)=>score(b)-score(a)).forEach(i=>grid.appendChild(i));}
+    sortGrid('msGrid'); sortGrid('bsGrid');
+  </script>
+</body>
+</html>
